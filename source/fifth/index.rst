@@ -1,4 +1,4 @@
-Laravel框架
+Laravel框架初识
 -----------------------
 .. toctree::
     :maxdepth: 1

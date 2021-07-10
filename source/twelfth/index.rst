@@ -1,4 +1,4 @@
-暂时还没有题目
+Laravel-admin前端组件
 -----------------------
 .. toctree::
     :maxdepth: 1

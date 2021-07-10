@@ -1,7 +1,10 @@
+
 .. toctree::
    :maxdepth: 2
 
    total/index.rst
+
+
 
 .. toctree::
    :maxdepth: 2
@@ -9,13 +12,11 @@
    php/index.rst
 
 
+
 .. toctree::
    :maxdepth: 2
 
    install-env/index.rst
-
-
-
 
 
 .. toctree::

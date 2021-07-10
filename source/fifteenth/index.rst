@@ -1,4 +1,4 @@
-暂时还没有题目
+Laravel-admin模型表格
 -----------------------
 .. toctree::
     :maxdepth: 1
