@@ -4,4 +4,6 @@ Laravel框架之视图
     :maxdepth: 1
 
     ORM.rst
+    valueoass.rst
+    blade.rst
 
