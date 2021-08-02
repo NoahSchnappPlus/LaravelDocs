@@ -7,6 +7,7 @@ php基础知识
     webdiff.rst
     process.rst
     grammar.rst
+    type.rst
     var.rst
     rules.rst
     const.rst
