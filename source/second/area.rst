@@ -51,7 +51,7 @@ PHP 当一个函数完成时，它的所有变量通常都会被删除。为了�
     }
     Test(5);           //输出parameter=5
 
-global 关键字 和 $GLOBALS[index]数组
+global 关键字和$GLOBALS[index]数组
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **global** 关键字用于函数内访问全局变量。

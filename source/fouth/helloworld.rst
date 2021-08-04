@@ -39,7 +39,7 @@ Laradock 是一套为 PHP 提供的完整 Docker 本地开发环境，有助于�
 **3.** **路由的简单定义**
 
 对Laravel 应用框架而言，通过 HTTP 协议处理用户请求并返回响是核心必备功能，对任何一个 Web 应用框架而言，通过 HTTP 协议处理用户请求并返回响应都是核心必备功能。
-最基本的 Laravel 路由只接收一个 路径（URL） 和一个闭包，并以此为基础提供一个非常简单优雅的路由定义方法 ：
+最基本的 Laravel 路由只接收一个 路径（URL） 和一个闭包，并以此为基础提供一个非常简单优雅的路由定义方法：
 
 .. code-block:: php
   :linenos:
@@ -77,13 +77,48 @@ web.php文件用于处理终端用户通过 Web 浏览器直接访问的请求�
 实验步骤
 ~~~~~~~~~~~~
 
-首先用 Visual Studio Code 软件打开my-laravel-app文件，找到并进入目录my-laravel-app/routes目录下，打开web.php文件，如图4-1-2所示。
+**步骤1.开启各项服务**
+
+
+首先，确保docker中laradock各项服务都在正常运行的状态下，如果还未开启，需要全部开启各项服务再进行下面的操作。
 
 .. figure:: media/helloworld002.png
   :align: center
   :alt:
+  
+  图 4.1.2 laradock正常运行状态
 
-  图4-1-2  web.php文件
+**步骤2.进入laradock容器工作区**
+
+然后进入项目目录laradock下输入cmd指令，回车执行，运行命令行。
+
+或者先运行命令行，通过cd命令进入到laradock所对应的路径。
+  
+.. figure:: media/helloworld003.png
+  :align: center
+  :alt:
+  
+  图4.1.3 项目laradock命令行运行
+
+在弹出的的命令行工具中，输入以下指令进入laradock容器的工作区
+
+.. code-block:: php
+  :linenos:
+
+  docker-compose exec --user=laradock workspace bash //进入工作区指令
+
+进入laradock容器工作区后，保持命令行，不要关闭。
+
+**步骤3.修改web.php文件**
+
+
+用 Visual Studio Code 软件打开my-laravel-app文件，找到并进入目录my-laravel-app/routes目录下，打开web.php文件，如图4-1-2所示。
+
+.. figure:: media/helloworld004.png
+  :align: center
+  :alt:
+
+  图4-1-4  web.php文件
 
 在"路由方法"区添加第4-6行代码，定义一个hello的路由，返回输出"Hello World!"，如程序清单所示
 
@@ -100,8 +135,8 @@ web.php文件用于处理终端用户通过 Web 浏览器直接访问的请求�
 最后，按Crtl+S键保存，打开浏览器并访问地址：http://localhost/hello ,
 执行结果如图4-1-3所示，可以看到网页上打印出了"Hello World!"。
 
-.. figure:: media/helloworld003.png
+.. figure:: media/helloworld005.png
   :align: center
   :alt:
 
-  图4-1-3 Hello World运行结果
+  图4-1-5 Hello World运行结果
